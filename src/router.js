@@ -26,6 +26,11 @@ const routes = [
             component: () => import('../src/views/PenjualanMobil/PenjualanMobilIndex.vue')
         },
         {
+            path: '/penjualan/create',
+            name: 'penjualan.create',
+            component: () => import('../src/views/PenjualanMobil/PenjualanMobilCreate.vue')
+        },
+        {
             path: '/verifikasidokumen',
             name: 'verifikasidokumen',
             component: () => import('../src/views/VerifikasiDokumen/VerifikasiDokumenIndex.vue')
@@ -42,23 +47,23 @@ const routes = [
         },
         {
             path: '/persetujuanowner',
-            name: 'persetujuanowner',
+            name: 'persetujuanowner.index',
             component: () => import('../src/views/PersetujuanOwner/PersetujuanOwnerIndex.vue')
         },
         {
             path: '/user',
-            name: 'user',
+            name: 'user.index',
             component: () => import('../src/views/User/UserIndex.vue')
         },
         {
             path: '/pembayaran',
-            name: 'pembayaran',
+            name: 'pembayaran.index',
             component: () => import('../src/views/Pembayaran/PembayaranIndex.vue')
         },
         {
-            path: '/riwayatpembayaran',
-            name: 'riwayatpembayaran',
-            component: () => import('../src/views/RiwayatPembayaran/RiwayatPembayarannIndex.vue')
+            path: '/buktipembayaran',
+            name: 'buktipembayaran.index',
+            component: () => import('../src/views/BuktiPembayaran/BuktiPembayaranIndex.vue')
         }
     ],
    

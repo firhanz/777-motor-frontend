@@ -1,9 +1,11 @@
 <template>
   <div class="p-2 flex flex-row-reverse">
-    <button class="btn btn-sm gap-1">
+    <router-link :to="{
+      name: 'penjualan.create'
+    }" class="btn btn-sm gap-1">
       <PlusSmallIcon class="h-6 w-6" />
       Tambah
-    </button>
+    </router-link>
   </div>
   <div class="overflow-x-auto">
     <table class="table w-full">
@@ -14,9 +16,6 @@
           <th>Merek</th>
           <th>Tahun</th>
           <th>Kilometer</th>
-          <th>Kapasitas Mesin</th>
-          <th>Jenis Mesin</th>
-          <th>Tipe Bodi</th>
           <th>Transmisi</th>
           <th>Warna</th>
           <th>Lokasi</th>
@@ -30,9 +29,6 @@
           <td>{{ data.merek.name }}</td>
           <td>{{ data.tahun }}</td>
           <td>{{ data.kilometer }}</td>
-          <td>{{ data.kapasitas_mesin }}</td>
-          <td>{{ data.jenis_mesin.name }}</td>
-          <td>{{ data.tipe_bodi.name }}</td>
           <td>{{ data.transmisi.name }}</td>
           <td>{{ data.warna.name }}</td>
           <td>{{ data.lokasi.name }}</td>
@@ -46,7 +42,7 @@
         </tr>
       </tbody>
     </table>
-  </div>
+  </div>  
 </template>
 <script setup>
 import { onMounted, reactive } from 'vue';

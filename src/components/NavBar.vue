@@ -15,7 +15,7 @@
         <li><router-link :to="{
             name: 'verifikasikendaraan'
         }">
-        Insepeksi
+        Inspeksi
         </router-link></li>
         <li><router-link :to="{
             name: 'verifikasidokumen'

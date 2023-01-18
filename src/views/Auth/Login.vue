@@ -51,6 +51,7 @@ const login = async () => {
       })
     }).catch((err) => {
       validation.value = err
+      console.log(validation.value) 
     })
 }
 </script>

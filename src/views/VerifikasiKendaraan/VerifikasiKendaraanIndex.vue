@@ -11,7 +11,10 @@
           <tr>
             <th>No.</th>
             <th>Nama Sales</th>
+            <th>ID Penjualan</th>
             <th>Status</th>
+            <th>Alasan</th>
+            <th>Aksi</th> <!--View aja-->
           </tr>
         </thead>
         <tbody>
