@@ -24,8 +24,44 @@ const routes = [
             path: '/penjualan',
             name: 'penjualan',
             component: () => import('../src/views/PenjualanMobil/PenjualanMobilIndex.vue')
+        },
+        {
+            path: '/verifikasidokumen',
+            name: 'verifikasidokumen',
+            component: () => import('../src/views/VerifikasiDokumen/VerifikasiDokumenIndex.vue')
+        },
+        {
+            path: '/verifikasikendaraan',
+            name: 'verifikasikendaraan',
+            component: () => import('../src/views/VerifikasiKendaraan/VerifikasiKendaraanIndex.vue')
+        },
+        {
+            path: '/riwayatkegiatan',
+            name: 'riwayatkegiatan',
+            component: () => import('../src/views/RiwayatKegiatan/RiwayatKegiatanIndex.vue')
+        },
+        {
+            path: '/persetujuanowner',
+            name: 'persetujuanowner',
+            component: () => import('../src/views/PersetujuanOwner/PersetujuanOwnerIndex.vue')
+        },
+        {
+            path: '/user',
+            name: 'user',
+            component: () => import('../src/views/User/UserIndex.vue')
+        },
+        {
+            path: '/pembayaran',
+            name: 'pembayaran',
+            component: () => import('../src/views/Pembayaran/PembayaranIndex.vue')
+        },
+        {
+            path: '/riwayatpembayaran',
+            name: 'riwayatpembayaran',
+            component: () => import('../src/views/RiwayatPembayaran/RiwayatPembayarannIndex.vue')
         }
     ],
+   
     meta: {
         requireAuth: true,
     }
