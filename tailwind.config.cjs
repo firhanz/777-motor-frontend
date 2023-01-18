@@ -7,9 +7,11 @@ module.exports = {
   theme: {
     extend: {},
   },
+  darkMode: "media",
   plugins: [require('daisyui')],
 
   daisyui: {
     themes: ["autumn"],
+    darkTheme: ["business"]
   },
 }

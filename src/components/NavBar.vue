@@ -1,5 +1,5 @@
 <template>
-<div class="navbar bg-base-100">
+<div class="navbar bg-accent text-accent-content">
   <div class="navbar-start">
     <div class="dropdown">
       <label tabindex="0" class="btn btn-ghost btn-circle">
@@ -22,7 +22,7 @@
     </div>
   </div>
   <div class="navbar-center">
-    <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+    <a class="btn btn-ghost normal-case text-xl">777 Motor</a>
   </div>
   <div class="navbar-end">
     <button class="btn btn-ghost btn-circle">
@@ -37,3 +37,6 @@
   </div>
 </div>
 </template>
+<script setup>
+
+</script>

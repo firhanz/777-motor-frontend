@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@heroicons/vue": "^2.0.13",
     "@pusher/push-notifications-web": "^1.1.0",
     "axios": "^1.2.2",
     "daisyui": "^2.47.0",

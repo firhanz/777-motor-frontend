@@ -50,6 +50,7 @@ export const useAuth = defineStore('auth-store', () => {
             user.value = response.data
             isLoggedIn.value = true
             role.value = user.value.role
+            console.log(role.value)
             return response.data
         } catch (err) {
             console.error('Error loading new arrivals:', err)
