@@ -12,8 +12,14 @@
         <li><router-link :to="{
             name: 'penjualan'
         }">Penjualan</router-link></li>
-        <li><a>Inspeksi</a></li>
-        <li><a>Appraisal</a></li>
+        <li><router-link :to="{
+            name: 'verifikasikendaraan'
+        }">
+        Insepeksi
+        </router-link></li>
+        <li><router-link :to="{
+            name: 'verifikasidokumen'
+        }">Appraisal</router-link></li>
         <li><a>Owner</a></li>
         <li><a>Finance</a></li>
         <li><a>User Manager</a></li>

@@ -1,36 +1,37 @@
 <template>
-<div>
-  <h1> Appraisal </h1> <!--ini halaman verifikasi dokumen dari mobil yang akan dijual-->
-    <div>
-        <p>BPKB       :</p> <!-- <button @click="showDropdown = !showDropdown">Pilih Salah Satu</button>
-                            <select v-if = "showDropdown" @change="handleChange">
-                                <option v-for = "option in options" :value="option.value">{{ option.text }} 
-                                </option>
-                            </select> -->
-    </div>
+    <div class="card w-96 bg-base-100 shadow-xl">
+        <div class="card-body">
+            <h2 class="card-title   ">Tambah Penjualan Mobil</h2>
+            <form @submit.prevent="tambah">
+                <div class="form-control w-full max-w-xs">
+                    <label class="label">
+                        <span class="label-text">Nama Mobil</span>
+                    </label>
+                    <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                    <label class="label">
+                        <span class="label-text-alt">Alt label</span>
+                    </label>
+                    <label class="label">
+                        <span class="label-text">Nama Mobil</span>
+                    </label>
+                    <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                    <label class="label">
+                        <span class="label-text-alt">Alt label</span>
+                    </label>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-primary">Submit</button>
+                </div>
+            </form>
 
-    <div>
-        <p>STNK       :</p>
+        </div>
     </div>
+</template>
 
-    <div>
-        <p>Pajak      :</p>
-    </div>
-  
-    <div>
-        <p>Body Unit  :</p>
-    </div>
-  
-    <div>
-        <p>Harga Unit :</p>
-    </div>
-  
-    <div>
-        <p>Catatan    :</p> <input type="text" placeholder="Enter text here" />
-    </div>
+<script setup>
 
-    <div>
-        <button>Layak Beli</button>
-        <button>Tidak Layak Beli</button>
-    </div>
-</div>
+</script>
+
+<style>
+
+</style>
